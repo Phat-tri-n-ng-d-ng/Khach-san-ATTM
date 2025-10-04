@@ -12,8 +12,14 @@ public class main extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        primaryStage.setTitle("Hello World!");
-        Scene scene = new Scene(new javafx.scene.control.Button("Hello, World!"), 400, 200);
+        primaryStage.setTitle("Statistics");
+        javafx.scene.layout.VBox vbox = new javafx.scene.layout.VBox(10);
+        vbox.setPadding(new javafx.geometry.Insets(20));
+        javafx.scene.control.Label title = new javafx.scene.control.Label("Statistics Dashboard");
+        title.setStyle("-fx-font-size: 20px; -fx-font-weight: bold;");
+        javafx.scene.control.Label stats = new javafx.scene.control.Label("Total Guests: 120\nTotal Rooms: 45\nRevenue: $12,000");
+        vbox.getChildren().addAll(title, stats);
+        Scene scene = new Scene(vbox, 400, 200);
         primaryStage.setScene(scene);
         primaryStage.show();
 
