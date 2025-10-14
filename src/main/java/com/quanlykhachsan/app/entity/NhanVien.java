@@ -85,4 +85,5 @@ public class NhanVien {
 		NhanVien other = (NhanVien) obj;
 		return Objects.equals(maNV, other.maNV);
 	}
+
 }

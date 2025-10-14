@@ -52,4 +52,5 @@ public class TaiKhoan {
 		TaiKhoan other = (TaiKhoan) obj;
 		return Objects.equals(tenDangNhap, other.tenDangNhap);
 	}
+
 }

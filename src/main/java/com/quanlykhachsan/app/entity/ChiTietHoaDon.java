@@ -28,5 +28,6 @@ public class ChiTietHoaDon {
 		this.phong = phong;
 		HoaDon = hoaDon;
 	}
+
 	
 }
